@@ -14,7 +14,6 @@ const Grid = () => {
       );
 
       gridContainers.forEach(container => {
-        const rect = container.getBoundingClientRect();
         const gridItems = container.querySelectorAll(".grid-item");
         gridItems.forEach(item => {
           const itemRect = item.getBoundingClientRect();
@@ -43,7 +42,7 @@ const Grid = () => {
           <img src={img1} alt="Healthy Snacks" />
           <div className="overlay">
             <p className="img_caption1">Healthy Snacks</p>
-            <a href="#" className="grid-btn">
+            <a href="/" className="grid-btn">
               Discover More
             </a>
           </div>
@@ -52,7 +51,7 @@ const Grid = () => {
           <img src={img2} alt="Community Walks" />
           <div className="overlay">
             <p className="img_caption1">Community Walks</p>
-            <a href="#" className="grid-btn">
+            <a href="/" className="grid-btn">
               Join Us
             </a>
           </div>
@@ -61,8 +60,8 @@ const Grid = () => {
           <img src={img3} alt="Fitness Training" />
           <div className="overlay">
             <p className="img_caption2">Fitness Training</p>
-            <a href="#" className="grid-btn2">
-              Start Training <span>-></span>
+            <a href="/" className="grid-btn2">
+              Start Training <span>-&gt;</span>
             </a>
           </div>
         </div>
@@ -70,8 +69,8 @@ const Grid = () => {
           <img src={img4} alt="Yoga & Meditation" />
           <div className="overlay">
             <p className="img_caption2">Yoga & Meditation</p>
-            <a href="#" className="grid-btn2">
-              Learn More <span>-></span>
+            <a href="/" className="grid-btn2">
+              Learn More <span>-&gt;</span>
             </a>
           </div>
         </div>
@@ -79,8 +78,8 @@ const Grid = () => {
           <img src={img5} alt="Health Consultations" />
           <div className="overlay">
             <p className="img_caption2 black_caption">Health Consultations</p>
-            <a href="#" className="grid-btn2 black_caption">
-              Book Now <span>-></span>
+            <a href="/" className="grid-btn2 black_caption">
+              Book Now <span>-&gt;</span>
             </a>
           </div>
         </div>
@@ -91,7 +90,7 @@ const Grid = () => {
           <img src={img1} alt="Healthy Snacks" />
           <div className="overlay">
             <p className="img_caption1">Healthy Snacks</p>
-            <a href="#" className="grid-btn">
+            <a href="/" className="grid-btn">
               Discover More
             </a>
           </div>
@@ -100,7 +99,7 @@ const Grid = () => {
           <img src={img2} alt="Community Walks" />
           <div className="overlay">
             <p className="img_caption1">Community Walks</p>
-            <a href="#" className="grid-btn">
+            <a href="/" className="grid-btn">
               Join Us
             </a>
           </div>
@@ -109,8 +108,8 @@ const Grid = () => {
           <img src={img3} alt="Fitness Training" />
           <div className="overlay">
             <p className="img_caption2">Fitness Training</p>
-            <a href="#" className="grid-btn2">
-              Start Training <span>-></span>
+            <a href="/" className="grid-btn2">
+              Start Training <span>-&gt;</span>
             </a>
           </div>
         </div>
@@ -118,8 +117,8 @@ const Grid = () => {
           <img src={img4} alt="Yoga & Meditation" />
           <div className="overlay">
             <p className="img_caption2">Yoga & Meditation</p>
-            <a href="#" className="grid-btn2">
-              Learn More <span>-></span>
+            <a href="/" className="grid-btn2">
+              Learn More <span>-&gt;</span>
             </a>
           </div>
         </div>
@@ -127,8 +126,8 @@ const Grid = () => {
           <img src={img5} alt="Health Consultations" />
           <div className="overlay">
             <p className="img_caption2 black_caption">Health Consultations</p>
-            <a href="#" className="grid-btn2 black_caption">
-              Book Now <span>-></span>
+            <a href="/" className="grid-btn2 black_caption">
+              Book Now <span>-&gt;</span>
             </a>
           </div>
         </div>
