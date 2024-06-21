@@ -1,44 +1,50 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../../services/api";
-import "../../style/Auth.css";
+import { useAuth } from "../../contexts/AuthContext";
+import "../../styles/Auth.css";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const { signup } = useAuth();
   const navigate = useNavigate();
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault();
-    try {
-      await api.post("/signup", { email, password });
-      navigate("/login");
-    } catch (error) {
-      console.error("Signup failed", error);
+    if (signup(email, password)) {
+      navigate("/");
+    } else {
+      setError("회원가입 실패");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="auth-form">
-      <h2>Signup</h2>
-      <label>
-        Email:
-        <input
-          type="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        />
-      </label>
-      <label>
-        Password:
-        <input
-          type="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-        />
-      </label>
-      <button type="submit">Signup</button>
-    </form>
+    <div className="auth-container">
+      <h2>회원가입</h2>
+      {error && <p className="error">{error}</p>}
+      <form onSubmit={handleSubmit}>
+        <label>
+          이메일:
+          <input
+            type="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          비밀번호:
+          <input
+            type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            required
+          />
+        </label>
+        <button type="submit">회원가입</button>
+      </form>
+    </div>
   );
 };
 

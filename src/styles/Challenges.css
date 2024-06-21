@@ -1,0 +1,38 @@
+.challenges-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.challenge-item {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.challenge-item h3 {
+  margin: 0 0 10px 0;
+}
+
+.challenge-item p {
+  margin: 0 0 20px 0;
+}
+
+.challenge-item button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.challenge-item button:hover {
+  background-color: #0056b3;
+}

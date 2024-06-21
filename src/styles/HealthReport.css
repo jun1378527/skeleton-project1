@@ -1,0 +1,53 @@
+.health-report-container {
+  padding: 20px;
+  background-color: #a7e6ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.health-report-container h1 {
+  text-align: center;
+  color: #3abef9;
+  margin-bottom: 20px;
+}
+
+.health-report {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.health-report h2 {
+  color: #3572ef;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.health-report p {
+  color: #333;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .health-report-container {
+    padding: 10px;
+  }
+
+  .health-report {
+    padding: 15px;
+  }
+
+  .health-report h2 {
+    font-size: 1.2em;
+  }
+
+  .health-report p {
+    font-size: 0.9em;
+  }
+}

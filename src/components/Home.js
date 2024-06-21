@@ -1,20 +1,17 @@
-import { Link } from "react-router-dom";
-import "../style/Home.css";
+import Navbar from "./Navbar";
+import Carousel from "./Carousel";
+import Grid from "./Grid";
+import Footer from "./Footer";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div className="home">
-      <h1>Welcome to My Health App</h1>
-      <p>Track your diet, exercise, and health reports all in one place.</p>
-      <div className="home-links">
-        <Link to="/login" className="home-link">
-          Login
-        </Link>
-        <Link to="/signup" className="home-link">
-          Sign Up
-        </Link>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Carousel />
+      <Grid />
+      <Footer />
+    </>
   );
 };
 
